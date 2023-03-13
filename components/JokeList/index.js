@@ -13,7 +13,7 @@ export default function JokeList() {
     <ul>
       {data.map((joke) => (
         <li key={joke.id}>
-          <button type="button" onClick={() => router.push(`/${joke.id}`)}>
+          <button type="button" onClick={() => router.push(`/${joke._id}`)}>
             {joke.joke}
           </button>
         </li>
